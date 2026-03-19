@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jamesk</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<div class="desktop-icons" aria-hidden="true">
+    <a class="desktop-icon" href="#about"><span class="icon-glyph">ME</span><span class="icon-label">about.txt</span></a>
+    <a class="desktop-icon" href="#music"><span class="icon-glyph">MP3</span><span class="icon-label">winamp.m4a</span></a>
+    <a class="desktop-icon" href="#projects"><span class="icon-glyph">DEV</span><span class="icon-label">projects.exe</span></a>
+    <a class="desktop-icon" href="#links"><span class="icon-glyph">WWW</span><span class="icon-label">links.url</span></a>
+    <a class="desktop-icon" href="#blinkies"><span class="icon-glyph">88X</span><span class="icon-label">blinkies.bmp</span></a>
+</div>
+
+<header>
+    <p>computer</p>
+    <p>something</p>
+    <marquee behavior="wrap" scrollamount="7">willkommen ようこそ welcome sup</marquee>
+    <!-- <nav>
+        <a href="#about">about</a>
+        <a href="#music">music</a>
+        <a href="#games-visual-novels">games</a>
+        <a href="#programming">programming</a>
+        <a href="#art-photography">art</a>
+        <a href="#languages">languages</a>
+        <a href="#books-blogs">books</a>
+        <a href="#coffee-cute-things">coffee</a>
+        <a href="#projects">projects</a>
+        <a href="#links">links</a>
+    </nav>  -->
+</header>
+
+<section id="about">
+    <div class="card">
+        <h2>about</h2>
+        <p>
+            i just like to
+            break thing, fix thing.
+        </p>
+    </div>
+</section>
+
+<section id="music">
+    <div class="card">
+        <h2>music</h2>
+        <p></p>
+        <div class="winamp" data-winamp>
+            <div class="winamp-titlebar">
+                <span class="winamp-title">jamesamp 3.141 - yay.mp3</span>
+                <div class="winamp-window-controls" aria-hidden="true">
+                    <span>-</span>
+                    <span>X</span>
+                </div>
+            </div>
+            <div class="winamp-main">
+                <div class="winamp-display">
+                    <div class="winamp-time" id="winamp-time">00:00</div>
+                    <div class="winamp-track" id="winamp-track">NOW PLAYING: </div>
+                    <div class="winamp-progress" aria-hidden="true">
+                        <span id="winamp-progress-fill"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="winamp-controls">
+                <button type="button" class="winamp-btn" data-action="prev">|<<</button>
+                <button type="button" class="winamp-btn" data-action="play">▶</button>
+                <button type="button" class="winamp-btn" data-action="pause">||</button>
+                <button type="button" class="winamp-btn" data-action="stop">☐</button>
+                <button type="button" class="winamp-btn" data-action="next">>>|</button>
+            </div>
+            <audio id="winamp-audio" preload="metadata"></audio>
+        </div>
+    </div>
+</section>
+
+<section id="games-visual-novels">
+    <div class="card">
+        <h2>games + visual novels</h2>
+        <p>play these: </p>
+    </div>
+</section>
+
+<section id="books-blogs">
+    <div class="card">
+        <h2>books</h2>
+        <p>read these: </p>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="card">
+        <h2>projects</h2>
+        <ul>
+            <li> solid state mp3 player </li>
+            <li> mini ereader </li>
+            <li> get money </li>
+        </ul>
+    </div>
+</section>
+
+<section id="links">
+    <div class="card">
+        <h2>find me</h2>
+        <ul>
+            <li><a referrerpolicy="no-referrer" target="_blank" href="https://github.com/james-k0">github</a> (bunch of rubbish)</li>
+            <li><a referrerpolicy="no-referrer" target="_blank" href="https://open.spotify.com/user/jamesyrobber">spotify</a> (idk)</li>
+            <li><a referrerpolicy="no-referrer" target="_blank" href="https://vndb.org/u298678/">vndb</a> (cringe)</li>
+            <li><a referrerpolicy="no-referrer" target="_blank" href="https://myfigurecollection.net/profile/aoidonau">myfigurecollection</a> (foo)</li>
+            <li><a referrerpolicy="no-referrer" target="_blank" href="https://letterboxd.com/jamesk0/">letterboxd</a> (nothing)</li>
+            <!-- <li><a referrerpolicy="no-referrer" target="_blank" href="https://www.youtube.com/@james9579">youtube</a> (nothing)</li> stop reading the source xd-->
+        </ul>
+    </div>
+</section>
+
+<section id="blinkies">
+    <div class="card">
+        <h2>88x31</h2>
+        <div class="badge-grid">
+            <a class="badge-link" title="badge link">
+                <img class="badge-88" data-badge src="images/badges/yay_its_a_button.gif">
+            </a>
+            <a class="badge-link" title="badge link">
+                <img class="badge-88" data-badge src="images/badges/js.jpg">
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer class="taskbar">
+    <div class="taskbar-left">
+        <span class="start-button">Start</span>
+        <span class="task-chip">selfintro.EXE</span>
+    </div>
+    <div class="taskbar-center">
+        <span class="task-status">© 2026 jamesk</span>
+    </div>
+    <div class="taskbar-right">
+        <p class="blink-badge">NOTIF</p>
+        <span id="taskbar-clock">12:00 AM</span>
+    </div>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
