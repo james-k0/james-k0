@@ -150,9 +150,33 @@ function setupCardCollapsing() {
 	});
 }
 
+function setupNotifLinkToggle() {
+	const notifToggle = document.getElementById("notif-toggle");
+	const optionalLinks = Array.from(document.querySelectorAll("#links .link-optional"));
+
+	if (!(notifToggle instanceof HTMLButtonElement) || !optionalLinks.length) {
+		return;
+	}
+
+	const setHiddenState = function (hidden) {
+		optionalLinks.forEach(function (item) {
+			item.classList.toggle("is-hidden", hidden);
+		});
+		notifToggle.setAttribute("aria-expanded", hidden ? "false" : "true");
+	};
+
+	setHiddenState(true);
+
+	notifToggle.addEventListener("click", function () {
+		const areHidden = optionalLinks[0].classList.contains("is-hidden");
+		setHiddenState(!areHidden);
+	});
+}
+
 
 updateTaskbarClock();
 setInterval(updateTaskbarClock, 1000);
 setupBadgeFallback();
 setupWinampMiniPlayer();
 setupCardCollapsing();
+setupNotifLinkToggle();

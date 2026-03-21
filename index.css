@@ -108,6 +108,7 @@ footer {
 	margin: 0;
 	padding: 4px 8px;
 	display: inline-block;
+	cursor: pointer;
 	font-size: 12px;
 	font-weight: 800;
 	text-transform: uppercase;
@@ -117,6 +118,26 @@ footer {
 	border: 2px solid #fff;
 	border-right-color: #444;
 	border-bottom-color: #444;
+}
+
+.blink-badge[aria-expanded="true"] {
+	background: #9f0006;
+	border-right-color: #222;
+	border-bottom-color: #222;
+}
+
+#links .link-optional.is-hidden {
+	display: none;
+}
+
+#links .link-optional:not(.is-hidden) a {
+	color: #2a85ff;
+	font-style: italic;
+}
+
+#links .link-optional:not(.is-hidden) a::before {
+	content: "◆ ";
+	color: #2a85ff;
 }
 
 .badge-link {
@@ -273,6 +294,20 @@ a {
 ul {
 	margin: 0.4rem 0 0;
 	padding-left: 1.2rem;
+}
+
+.links-hint {
+	margin: 0.2rem 0 0.35rem;
+	font-size: 11px;
+	font-family: "Courier New", monospace;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	text-transform: lowercase;
+	color: rgba(8, 25, 86, 0.62);
+	background: rgba(255, 255, 255, 0.22);
+	display: inline-block;
+	padding: 1px 5px;
+	border: 1px dotted rgba(8, 25, 86, 0.35);
 }
 
 li {
